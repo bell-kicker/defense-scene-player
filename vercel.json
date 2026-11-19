@@ -1,0 +1,17 @@
+{
+  "headers": [
+    {
+      "source": "/media/(.*)",
+      "headers": [
+        { "key": "Content-Type", "value": "video/mp4" },
+        { "key": "Accept-Ranges", "value": "bytes" }
+      ]
+    },
+    {
+      "source": "/manifest.json",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=30" }
+      ]
+    }
+  ]
+}
